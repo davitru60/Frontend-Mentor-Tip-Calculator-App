@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -31,13 +31,16 @@
 
         <div class="tip-container">
           <p> Select Tip %</p>
-          <button type="button" id="tip-btn"> 5% </button>
-          <button type="button" id="tip-btn"> 10% </button>
-          <button type="button" id="tip-btn"> 15% </button>
-          <button type="button" id="tip-btn"> 25% </button>
-          <button type="button" id="tip-btn"> 50% </button>
-          <input type="text" id="tip-in" name="text" placeholder="Custom">
-        </div>
+          <div class="buttons-container">
+            <button type="button" id="tip-btn"> 5% </button>
+            <button type="button" id="tip-btn"> 10% </button>
+            <button type="button" id="tip-btn"> 15% </button>
+            <button type="button" id="tip-btn"> 25% </button>
+            <button type="button" id="tip-btn"> 50% </button>
+            <input type="text" id="tip-in" name="text" placeholder="Custom">
+          </div>
+          </div>
+       
 
         <form action="/">
           <br>
@@ -47,13 +50,17 @@
       </div>
 
       <article class="output-container">
-        <button type="button" id="tip-btn"> Reset</button>
+        <div class="content-container">
+          <p>Tip Amount <br> <span id="person">/person </span> <span id="tip-amount"> $4.27 </span> </p>
+          <p>Total <br> <span id="person">/person </span> <span id="tip-total"> $32.79 </span> </p>
+        </div>
+        
+        <div class="reset-btn-container">
+          <button type="button" id="reset-btn"> RESET</button>
+        </div>
+      
       </article>
     </article>
-
-
-
-
 </body>
 
 </html>
