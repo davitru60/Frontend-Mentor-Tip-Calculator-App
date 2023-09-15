@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <script src="calculateTip.js" defer></script>
 
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -24,9 +25,10 @@
 
     <article class="card">
       <div class="input-container">
-        <form action="/" class="">
+        <form action="/" class="form bill-form">
           <label for="bill">Bill <br> </label>
-          <input type="text" id="bill-in" name="text" placeholder="$">
+          <input type="text" id="bill-in" name="text" placeholder="">
+          <img src="./images/icon-dollar.svg">
         </form>
 
         <div class="tip-container">
@@ -42,17 +44,18 @@
           </div>
        
 
-        <form action="/">
+        <form action="/" class="form  ">
           <br>
           <label for="people">Number of People</label> <br>
-          <input type="text" id="n-people" name="text" placeholder="$">
+          <div id="error-message" class="error-message"></div>
+          <input type="text" id="n-people" name="text" placeholder="">
         </form>
       </div>
 
       <article class="output-container">
         <div class="content-container">
-          <p>Tip Amount <br> <span id="person">/person </span> <span id="tip-amount"> $4.27 </span> </p>
-          <p>Total <br> <span id="person">/person </span> <span id="tip-total"> $32.79 </span> </p>
+          <p>Tip Amount <br> <span id="person">/person </span> <span id="tip-amount"> $0.00 </span> </p>
+          <p>Total <br> <span id="person">/person </span> <span id="tip-total"> $0.00 </span> </p>
         </div>
         
         <div class="reset-btn-container">
@@ -61,6 +64,7 @@
       
       </article>
     </article>
+    </main>
 </body>
 
 </html>
